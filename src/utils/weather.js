@@ -11,7 +11,7 @@ const weather=(latitude,longitude,callback)=>{
        }
        else{
         const msg=body.current.weather_descriptions[0]+".It is current " +body.current.temperature+" degree celsius but it feels like "
-             +body.current.feelslike+" degree celsius outside."
+             +body.current.feelslike+" degree celsius outside. The wind speed is "+body.current.wind_speed
         callback(undefined,msg)
        }
     })
